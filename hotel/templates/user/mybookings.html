@@ -1,12 +1,12 @@
-{% extends 'basic.html' %} {% block title %}Dashboard {% endblock title %} {% block body %}
+{% extends 'basic.html' %} {% block title %}Mis Reservas{% endblock title %} {% block body %}
 {% load app_tags %}
-<h3 class="text-center  text-success">Mis Reservas </h3>
+<h3 class="text-center  text-success">Mis Reservas</h3>
 <table class="table">
     <thead>
         <th>Usuario</th>
-        <th>Habitacion</th>
+        <th>Tipo de Habitacion</th>
         <th>Ubicacion</th>
-        <th>Personas</th>
+        <th>Cantidad Personas Maximas</th>
         <th>Check in</th>
         <th>Check out</th>
         <th>Precio</th>
@@ -14,7 +14,7 @@
     {% for each_booking in bookings %}
     <tr>
         <td>{{each_booking.guest.username}}</td>
-        <td>{{each_booking.room.roomnumber}}</td>
+        <td>{{each_booking.room.ROOM_TYPE}}</td>
         <td>{{each_booking.room.hotel.location}}</td>
         <td>{{each_booking.room.capacity}}</td>
         <td>{{each_booking.check_in}}</td>

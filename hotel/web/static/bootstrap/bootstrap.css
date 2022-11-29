@@ -6075,7 +6075,7 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #007bff !important;
+  background-color: #474b4e !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -8743,6 +8743,10 @@ button.bg-dark:focus {
   text-align: center !important;
 }
 
+.text-center h1 {
+  margin-bottom: 70px;
+}
+
 @media (min-width: 576px) {
   .text-sm-left {
     text-align: left !important;
@@ -8972,4 +8976,12 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important;
   }
 }
+
+.tipo-room h1{
+  margin-bottom: 5rem;
+}
+
+/* .carousel-caption {
+  font-weight: bolder;
+} */
 /*# sourceMappingURL=bootstrap.css.map */

@@ -9,7 +9,7 @@ class Hotels(models.Model):
     name = models.CharField(max_length=30,default="TurismoReal") #poner turismoreal
     owner = models.CharField(max_length=20, default="TurismoReal")
     location = models.CharField(max_length=50, default="Ejemplo: Region de chile") #location = puede ser nombres de comunas o regiones
-    state = models.CharField(max_length=50,default="Ejemplo: Capital de la region") #state = regiones
+    state = models.CharField(max_length=50,default="Ejemplo: Capital de la region") #state = podria ser la capital
     country = models.CharField(max_length=50,default="Chile") #poner chile
     def __str__(self):
         return self.name
