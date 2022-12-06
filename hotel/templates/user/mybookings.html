@@ -1,6 +1,6 @@
 {% extends 'basic.html' %} {% block title %}Mis Reservas{% endblock title %} {% block body %}
 {% load app_tags %}
-<h3 class="text-center  text-success">Mis Reservas</h3>
+<h3 class="text-center font-weight-bold text-success">Mis Reservas</h3>
 <table class="table">
     <thead>
         <th>Usuario</th>
@@ -14,9 +14,9 @@
     {% for each_booking in bookings %}
     <tr>
         <td>{{each_booking.guest.username}}</td>
-        <td>{{each_booking.room.ROOM_TYPE}}</td>
-        <td>{{each_booking.room.hotel.location}}</td>
-        <td>{{each_booking.room.capacity}}</td>
+        <td>Numero {{each_booking.room.room_type}}</td>
+        <td>Region de {{each_booking.room.hotel.location}}</td>
+        <td>{{each_booking.room.capacity}} Personas</td>
         <td>{{each_booking.check_in}}</td>
         <td>{{each_booking.check_out}}</td>
         <td>USD ${{each_booking.room.price}}</td>

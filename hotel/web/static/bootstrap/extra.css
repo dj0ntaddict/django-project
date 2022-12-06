@@ -45,3 +45,12 @@
     -webkit-transform:scale(1.5);
     transform:scale(1.5);
 }
+
+.lion1 {
+    transition:transform 0.10s ease;
+}
+
+.lion1:hover {
+    -webkit-transform:scale(2);
+    transform:scale(2);
+}

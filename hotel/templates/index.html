@@ -49,6 +49,7 @@
         
         <!--Booking Section starts here-->
     <section>
+        <h1 class="text-center text-justify pt-5 font-weight-bold">Formulario de Busqueda de Disponibilidad</h1>
         <div class="container-fluid py-5 px-5 ">
             <form action="" method="POST">
             {% csrf_token %}
@@ -82,10 +83,10 @@
                 </div>
                 <div class="col-lg-2">
 
-                    <input type="submit" value="Buscar Disponibilidad" class="form-control mr-sm-2 btn btn-primary my-4" style="position: relative;top: 7px;">
+                    <input type="submit" value="Buscar Disponibilidad" class="form-control mr-sm-2 btn btn-primary my-4" style="position: relative;top: 7px; font-weight: bold;">
                 </div>
                 {% if rooms %}
-                <p class="text-center text-success">Habitaciones Disponibles</p>
+                <p class="text-center text-success pt-5 font-weight-bold" style="font-size: 24px;">¡Habitaciones Disponibles!</p>
                 {% endif %}
                 
             </div>
@@ -112,7 +113,7 @@
                 <td>{{ r.capacity }}</td>
                 <td>USD ${{ r.price }}</td>
                 
-                <td><a href="/user/book-room?roomid={{r.id}}"><button class="btn btn-warning">Reservar Ahora!</button></a></td>
+                <td><a href="/user/book-room?roomid={{r.id}}"><button class="btn btn-warning font-weight-bold">Reservar Ahora!</button></a></td>
                 </tr>
             {% endfor %}
             
@@ -136,9 +137,9 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="text-center">
+                    <td class="text-center ">
                         <!--Room details-->
-                        <h1 class="tipo-room" style="padding-bottom: 25px;">Básico</h1>
+                        <h1 class="tipo-room font-weight-bold" style="margin-bottom: 10px;">Básico</h1>
                         <p>Precio: $30 USD / dia</p>
 
                         <p>Tamaño: 10 Metros</p>
@@ -148,14 +149,14 @@
                     </td>
                     <td class="text-center">
                         <!--Room Images-->
-                        <img src="{% static 'basic-room.jpg'%}" alt="" class="img-fluid col-md-5">
+                        <img class="lion1" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto; height: auto; border-radius: 10px;" src="{% static 'basic-room.jpg'%}" height="200" width="300" />
                     </td>
 
                 </tr>
                 <tr>
                     <td class="text-center">
                         <!--Room details-->
-                        <h1 class="tipo-room" style="padding-bottom: 25px;">Premium</h1>
+                        <h1 class="tipo-room font-weight-bold" style="margin-bottom: 10px;">Premium</h1>
                         <p>Precio: $50 USD / dia</p>
 
                         <p>Tamaño: 15 Metros</p>
@@ -165,14 +166,15 @@
                     </td>
                     <td class="text-center">
                         <!--Room Images-->
-                        <img src="{% static 'premium-room1jpg.jpg'%}" alt="" class="img-fluid col-md-5">
+                        <!-- <img src="{% static 'premium-room1jpg.jpg'%}" alt="" class="img-fluid col-md-5"> -->
+                        <img class="lion1" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto; height: auto; border-radius: 10px;" src="{% static 'premium-room1jpg.jpg'%}" height="200" width="300" />
                     </td>
 
                 </tr>
                 <tr>
                     <td class="text-center">
                         <!--Room details-->
-                        <h1 class="tipo-room" style="padding-bottom: 25px;">VIP</h1>
+                        <h1 class="tipo-room font-weight-bold" style="margin-bottom: 10px;">VIP</h1>
                         <p>Precio: $60 USD / dia</p>
 
                         <p>Tamaño: 20 Metros</p>
@@ -182,7 +184,7 @@
                     </td>
                     <td class="text-center">
                         <!--Room Images-->
-                        <img src="{% static 'vip-gallery1.jpg'%}" alt="" class="img-fluid col-md-5">
+                        <img class="lion1" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto; height: auto; border-radius: 10px;" src="{% static 'vip-gallery1.jpg'%}" height="200" width="300" />
                     </td>
 
                 </tr>
